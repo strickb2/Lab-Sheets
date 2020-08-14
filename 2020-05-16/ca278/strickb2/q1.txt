@@ -1,0 +1,74 @@
+Student Number - 18704489
+
+
+1(a)
+ # This is a comment. Lines with a comment are not read by the program.
+
+
+Docstrings can be viewed within the terminal by entering the command help(function_name) whereas comments can only be viewed within the code.
+
+
+1(b)
+#!/usr/bin/env python
+
+
+n = input("Please enter a positive number: ")
+
+
+if n < 0:
+    print "Invalid input!"
+    n = input("Please enter a positive number: ")
+
+
+1(c)
+It is printed the first time as the string has not been appended yet.
+The order of the first two lines in the some_func function are the wrong way around, so some_str saves the output without returning it to other_str, meaning the second and third outputs stay the same. If the order of the line is reversed, the second output will return as ‘7005000567’
+
+
+1(d)
+They are printed twice as 2 print functions are stored in both files. Remove the print functions in my_str_functions and it will output correctly.
+
+
+1(e)
+Add 'walks':'walks' to the end of the dictionary.
+
+
+1(f)
+Where the : symbol is used, the program will access a list starting from the value on the left side of the symbol and ending on the value on the right side minus 1 e.g. ls[0:4] will access the first item to the third item.
+
+
+ls[0:3]
+ls[:3]
+ls[-7:-3]
+
+
+1(g)
+A class variable is a variable shared by all instances of a class and an attribute is a variable defined within a class but outside any of the class's methods. A class variable could be used when many objects belonging to a class call the variable within a function.
+
+
+1(h)
+None is printed as two print statements are included within the program. 
+If the statement ‘print c’ is changed to ‘return c’
+Or the statement in the if function is just to just call the function rather than print it 
+only 8 will be printed.
+
+
+1(i)
+def check_passwd(usern,passwd,logins):
+    for usern in logins:
+        if passwd == logins[usern]:
+            return "Password accepted"
+        if passwd != logins[usern]:
+            return "Incorrect password"
+    if usern not in logins:
+        return "User not found"
+
+
+
+
+1(j)
+with open(sys.argv[1], "r") as f:
+    contents = f.readlines()
+    for content in contents:
+        starter, main, dessert = content.strip().split(", ")
+        m = MenuItem(starter, main, dessert)
